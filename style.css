@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    min-height: 100vh;
+    background-color: #242d34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e7e9ea;
+}
+
+.main-container {
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-inline: 2rem;
+    border-radius: 16px;
+}
+
+.container {
+    width: 100%;
+    color: #d6d9db;
+    /* display: flex; */
+    justify-content: center;
+    position: relative;
+}
+
+.close-icon {
+    border: 0;
+    font-family: inherit;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0.8;
+    position: fixed;
+}
+
+.close-icon:hover {
+    opacity: 2;
+    font-size: 33px;
+}
+
+.Twitter-logo {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 250px;
+    font-size: 30px;
+    position: static;
+}
+
+.h1 {
+    margin-left: 150px;
+    color: inherit;
+    margin-top: 30px;
+}
+
+.sign-in-buttons {
+    /* width: 300px;
+    min-height: 50px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+
+.google-button {
+    width: 270px;
+    height: 40px;
+    margin-left: 150px;
+    border-radius: 20px;
+    background-color:#e7e9ea ;
+    color: black;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.Apple-button {
+    margin-top: 30px;
+    width: 270px;
+    height: 40px;
+    margin-left: 150px;
+    border-radius: 20px;
+    background-color:#e7e9ea ;
+    color: black;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.Apple-button:hover,
+.Apple-button:checked {
+    opacity: 0.9;
+}
+
+.google-button:hover,
+.google-button:checked {
+    opacity: 0.9;
+}
+
+.google-button i {
+    /* right: 100px; */
+    padding: 0 15px 0 0;
+    font-size: 20px;
+}
+
+.Apple-button i {
+    padding: 0 15px 0 0;
+    font-size: 25px;
+}
+
+.or-divider {
+    margin-top: 40px;
+    margin-left: 250px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-block: 20px;
+}
+
+/* .or-divider p::before,
+.or-divider p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    height: 1px;
+    background-color: #333639;
+} */
+
+.or-divider p::before {
+    left: 0;
+}
+
+.or-divider p::after {
+    left: 0;
+}
+
+.login-in {
+    width: 100%;
+    position: relative;
+}
+
+.login-in input {
+    width: 350px;
+    height: 50px;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #333639;
+    font-family: "Roboto";
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input + label {
+    position: absolute;
+    top: 35px;
+    left: 160px;
+    /* bottom: 50px; */
+    /* pointer-events: none; */
+    transition: 200ms ease;
+}
+
+/* label:checked, */
+input+label:hover {
+    transform: translateY(-10px);
+}
+
+input:focus {
+    outline: 1px solid #1d9bfe;
+}
+
+input:focus {
+    color: white;
+}
+
+/* input:not (:placeholder-shown)+label,
+input:focus + label {
+    top: 6px;
+    left: 10px;
+    font-size:10px;
+
+} */
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.next-button {
+    margin-top: 20px;
+    width: 270px;
+    height: 40px;
+    margin-left: 150px;
+    border-radius: 20px;
+    font-family: "Roboto";
+    font-size: 16px;
+    border: 0;
+    opacity: 0.8;
+}
+
+.next-button:hover,
+.next-button:checked {
+    opacity: 1;
+}
+
+.password-button {
+    margin-top: 20px;
+    width: 270px;
+    height: 40px;
+    margin-left: 150px;
+    border-radius: 20px;
+    font-family: "Roboto";
+    font-size: 16px;
+    border: 2px solid #d6d9db;
+    background-color: black;
+    color: #d6d9db;
+    opacity: 0.8;
+}
+
+.password-button:hover,
+.password-button:checked {
+    opacity:1;
+}
+
+.sign-up {
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: rgba(60, 60, 255, 0.872);
+}
